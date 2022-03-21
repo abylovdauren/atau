@@ -1,0 +1,662 @@
+* {
+  font-family: "Scada";
+}
+body {
+  padding-top: 192px;
+}
+header {
+  background: #fff;
+  padding: 30px 0 15px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+}
+/* mobile start */
+
+.mobile-version {
+  padding: 20px 0 0 0;
+  display: none;
+}
+.badge-mobile div {
+  width: 27px;
+  height: 3px;
+  background: #34495e;
+  margin: 6px 0;
+  color: inherit;
+}
+.mobile-version-row {
+  padding: 15px 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.header-icons {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-icons-second {
+  position: relative;
+}
+.count {
+  margin-right: 15px;
+  position: absolute;
+  right: -8px;
+  top: -7px;
+  padding: 4px 7px;
+  font: 10px "Scada", sans-serif;
+  background: #5a4942;
+  color: #fff;
+  border-radius: 50%;
+}
+.mobile-search {
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+.mobile-search {
+  background-color: #48d088;
+  height: 50px;
+  padding: 10px 0;
+}
+.mobile-searchTerm {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  padding: 0 20px;
+  width: 80%;
+  border-radius: 7px;
+  height: 42px;
+  outline: 0;
+  padding-left: 30px;
+}
+.mobile-searchTerm::placeholder {
+  color: #fff;
+}
+
+.mobile-searchTerm:focus {
+  color: #fff;
+}
+
+.mobile-searchButton {
+  text-align: center;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  height: 42px;
+  border-radius: 7px;
+  width: 10%;
+  color: #fff;
+  font: 17px "Scada", sans-serif;
+  margin-left: -10px;
+  cursor: pointer;
+}
+.mobile-search-icon {
+  align-items: center;
+  width: 20px;
+  height: auto;
+}
+.header-mobile-logo {
+  width: 189px;
+  height: 37.16px;
+}
+
+.mobile-cotolog-decr h2 {
+  font-size: 8px;
+  font-family: "Scada" Bold;
+  color: #5a4942;
+  text-transform: uppercase;
+  text-align: center;
+}
+.mobile-medicine-item {
+  padding: 20px 0;
+  background-color: #fff;
+  border-bottom: 1px solid #f6f6f6;
+  display: flex;
+  justify-content: space-around;
+}
+.mobile-medicine-decr-fov {
+  max-width: 229px;
+}
+.mobile-price .mobile-price {
+  color: #48d088;
+  font: 14px/16px "Open Sans Semibold", sans-serif;
+}
+.mobile-price {
+  display: flex;
+  justify-content: space-between;
+}
+.mobile-favourites-img {
+  width: 92px;
+  margin-right: 10px;
+}
+.pr-pur {
+  display: flex;
+  justify-content: space-between;
+}
+.mobile-price {
+  color: #48d088;
+  font: 16px "Open Sans Semibold", sans-serif;
+  text-align: center;
+}
+.mobile-medicine-decr p {
+  font: 16px/22px "Scada", sans-serif;
+  color: #5a4942;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+}
+.mobile-cotolog-decr {
+  margin: 0;
+  padding: 30px;
+}
+.mobile-content {
+  display: none;
+}
+.mobile-cotolog-first {
+  display: none;
+}
+.accordion {
+  background-color: rgb(255, 255, 255);
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.accordion:after {
+  content: "\02795"; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+.active,
+.accordion:hover {
+  border-bottom: 1px solid #f6f6f6;
+  background-color: rgb(255, 253, 253);
+}
+.accordion-block-mobile {
+  margin-top: 20px;
+  display: none;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.btn-show {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: -30px auto 0 auto;
+  border: none;
+}
+/* mobile end */
+
+.header-all {
+  align-items: center;
+}
+
+.tabcontent {
+  display: none;
+}
+.company-content-decr {
+  display: block;
+}
+
+.loc-absol .location {
+  position: absolute;
+  height: auto;
+  width: 12%;
+  left: -15px;
+}
+
+.call {
+  position: absolute;
+  height: 22px;
+  width: auto;
+  left: -2px;
+}
+.login {
+  position: absolute;
+  height: 23px;
+  width: auto;
+  left: 2px;
+}
+
+.block-flex {
+  margin: 0;
+}
+.language-button,
+.language-button:focus,
+.language-button:active {
+  border: none;
+  outline: none;
+}
+.number,
+.number:hover {
+  color: #146853;
+  font: 17px "Scada", sans-serif;
+}
+.login-register {
+  text-decoration: none;
+  padding-left: 13px;
+  text-align: inherit;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.auth,
+.register,
+.auth:hover {
+  color: #5a4942;
+}
+.auth:hover,
+.register:hover {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.view {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+.dropdown {
+  padding: 20px 0;
+  display: flex;
+  justify-content: flex-start;
+}
+.open {
+  margin-top: 7px;
+  margin-left: 10px;
+}
+
+.search {
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  border-right: none;
+  padding: 17px;
+  width: 80%;
+  border: 1px solid #3e6855;
+  border-radius: 7px;
+  height: 42px;
+  outline: 0;
+  padding-left: 20px;
+}
+
+.searchTerm:focus {
+  color: #00b4cc;
+}
+
+.searchButton {
+  text-align: center;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  border: 0;
+  background: linear-gradient(180deg, #57ae80, #406e58);
+  padding: 5px;
+  height: 42px;
+  border-radius: 7px;
+  width: 25%;
+  color: #fff;
+  font: 17px "Scada", sans-serif;
+  margin-left: -10px;
+  cursor: pointer;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.basket {
+  position: relative;
+  margin-top: 30px;
+}
+.basket-icon {
+  position: absolute;
+  left: -10px;
+}
+.basket-decr,
+.basket-decr:hover {
+  font-weight: 500;
+  color: #146853;
+  font-weight: 500;
+  padding-left: 24px;
+  text-decoration: none;
+}
+.basket-decr:hover {
+  color: #007bff;
+}
+.card-count {
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  left: 1.5px;
+  top: -10px;
+  background: #5a4942;
+  border-radius: 50%;
+  min-width: 18px;
+  text-align: center;
+}
+.banner-block {
+  background: #f6f6f6;
+}
+
+.slider-image {
+  object-fit: contain;
+  width: 100%;
+  height: 380px;
+}
+.cotolog-image {
+  width: 150px;
+  height: 150.41px;
+}
+
+.cotolog {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+.main-divider {
+  background-color: #48cf88;
+  border-radius: 10px;
+  height: 5px;
+  width: 50px;
+  margin: 10px auto;
+  display: block;
+}
+
+h2 {
+  font: 30px "Scada", sans-serif;
+  color: #5a4942;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 40px;
+}
+.main-caption {
+  margin: 50px 0;
+}
+.medicine-item {
+  /*   margin-bottom: 30px; */
+  padding: 30px 20px 30px;
+  background-color: #fff;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.medicine-item:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.favourites-img {
+  display: block;
+  margin: 50px auto 20px;
+  object-fit: contain;
+  height: 12vh;
+  width: 104px;
+  height: 104px;
+}
+.img-drug {
+  position: absolute;
+  right: 20px;
+  top: 35px;
+}
+
+.medicine-product {
+  display: flex;
+  padding: 20px;
+}
+.btn-purchase:hover {
+  background: #5a4942;
+  color: #fff;
+}
+
+.btn-purchase {
+  display: block;
+  margin: auto;
+  background: linear-gradient(#57af81, #3f6b57);
+  color: #fff;
+  font: 16px/22px "Scada", sans-serif;
+  width: 145px;
+  height: 45px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.medicine-decr p {
+  font: 16px/22px "Scada", sans-serif;
+  color: #5a4942;
+  height: 66px;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+}
+.medicine-decr p:hover {
+  text-decoration: none;
+}
+.price p {
+  color: #48d088;
+  font: 24px/22px "Open Sans Semibold", sans-serif;
+  text-align: center;
+  margin: 20px 0;
+}
+.tab {
+  width: auto;
+  display: inline-flex;
+  justify-content: center;
+  border: 1px solid #5a4942;
+}
+.cotolog-tab {
+  text-align: center;
+}
+
+.tablinks {
+  align-items: center;
+  width: 249px;
+  height: 37px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  color: #5a4942;
+  border-radius: 0;
+  margin-top: -1px;
+  background-color: transparent;
+}
+.tablinks.active {
+  background-color: #5a4942;
+  color: #fff;
+}
+
+span {
+  font: 14px/22px Scada, sans-serif;
+  color: #5a4942;
+}
+
+.e-mail {
+  height: 240px;
+  width: 100%;
+  background: url("../dist/img/section-bg.jpg") center center/cover no-repeat;
+  padding: 50px 0;
+}
+.e-mail-decr {
+  font: 32px "Scada", sans-serif;
+  color: #fff;
+  text-align: center;
+}
+.email-input {
+  display: block;
+  margin: 30px auto 15px;
+  border: 1px solid #fff;
+  width: 270px;
+  height: 40px;
+  border-radius: 3px;
+  background: transparent;
+  font: 16px "Scada", sans-serif;
+  outline: 0;
+  color: #f6f6f6;
+}
+.email-input::placeholder {
+  color: #fff;
+}
+.email-btn {
+  width: 200px;
+  border: 1px solid #fff;
+  display: block;
+  margin: auto;
+  font: 18px "Scada", sans-serif;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+.email-btn:hover {
+  color: #fff;
+  background: transparent;
+}
+.map,
+.company {
+  background-color: #f6f6f6;
+  padding: 25px;
+}
+.map-decr {
+}
+
+.company .company-content {
+  padding: 0 0 205px 0px;
+  display: flex;
+}
+.company-btn {
+  margin: 20px 0;
+}
+.company-img {
+  max-width: 100%;
+  height: auto;
+}
+.company-content p {
+  margin: 0;
+  color: #5a4942;
+  font: 17px/30px "Scada", sans-serif;
+}
+
+.company-btn-decr {
+  background: linear-gradient(180deg, #57ae80, #406e58);
+
+  width: 25%;
+  cursor: pointer;
+  color: #fff;
+  font: 16px/22px "Scada", sans-serif;
+  height: 45px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.company-btn-decr:hover {
+  background: linear-gradient(0, #57ae80, #406e58);
+  color: #fff;
+  text-decoration: none;
+}
+.footer {
+  background-color: #fff;
+  padding: 40px 0;
+}
+.footer-list p {
+  margin-bottom: 0;
+  color: #5a4942;
+}
+.footer-list p:hover {
+  color: #60a5f0;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #007bff;
+}
+
+ul {
+  list-style-type: none;
+}
+.information-row h6 {
+  color: #1e0000;
+  font: 14px Scada, sans-serif;
+  margin-top: 1px;
+}
+.information-row p {
+  color: #5a4942;
+  font: 14px/24px "Scada", sans-serif;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+.information-row a {
+  text-decoration: none;
+  color: #48d088;
+}
+.footer-reuest-desr {
+  margin: 10px 0;
+  color: #5a4942;
+  font: 14px/24px "Scada", sans-serif;
+}
+.footer-reues-btn {
+  margin: 30px 0;
+  background: linear-gradient(180deg, #57ae80, #406e58);
+  width: 25%;
+  cursor: pointer;
+  color: #fff;
+  font: 16px/22px "Scada", sans-serif;
+  height: 45px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer-reues-btn:hover {
+  background: linear-gradient(0, #57ae80, #406e58);
+  color: #fff;
+  text-decoration: none;
+}
+.footer-btn {
+  margin: 30px 0;
+}
+.finish {
+  background-color: #5a4942;
+  padding: 20px 0;
+}
+.finish-too {
+  margin: 0;
+  font: 16px "Scada", sans-serif;
+  align-items: center;
+  color: #fff;
+}

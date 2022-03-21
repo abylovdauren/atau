@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pharmacom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Scada:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"
+      integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <header class="desktop-version">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-4">
+            <img src="dist/icons/logo_ph.png" alt="1" class="logo-img" />
+          </div>
+          <div class="col-xl-8 col-lg-8 col-md-8">
+            <div class="row header-all">
+              <div class="col-xl-4 col-lg-4 col-md-4 loc-absol">
+                <img
+                  src="dist/icons/city_header.png"
+                  alt="2"
+                  class="location"
+                />
+                <p class="block-flex">Ваш город</p>
+                <select class="language-button selectpicker">
+                  <option value="Almaty">Алматы</option>
+                  <option value="Astana">Нур-Султан</option>
+                  <option value="Shymkent">Шымкент</option>
+                  <option value="Petropavlck">Петропавловск</option>
+                  <option value="Kyzylorda">Кызылорда</option>
+                </select>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-4 loc-absol">
+                <img src="dist/icons/phone_header.png" alt="3" class="call" />
+                <p class="block-flex">Call-Center 24/7</p>
+                <a href="tel:+77719410941" class="number"> +7 771 941 0 941</a>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-4 loc-absol">
+                <img src="dist/icons/auth_img.png" alt="4" class="login" />
+                <div class="d-flex login-register">
+                  <a href="#" class="auth"> Вход</a>
+                  <p class="f-size-7">|</p>
+                  <a href="#" class="register">Регистрация</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row"></div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-2 col-lg-2 col-md-2">
+            <div class="menu">
+              <div class="dropdown">
+                <div class="drop-inner">
+                  <div class="view"></div>
+                  <div class="view"></div>
+                  <div class="view"></div>
+                </div>
+                <p class="open">Меню</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-8 col-lg-8 col-md-8">
+            <div class="search">
+              <input
+                type="text"
+                class="searchTerm"
+                placeholder="Поиск по лекарственным средствам"
+              />
+              <button type="submit" class="searchButton">
+                <img
+                  src="dist/icons/search-ico.png"
+                  alt="3"
+                  class="search-icon"
+                />
+                <i class="fa fa-search"></i>
+                Найти
+              </button>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-2">
+            <div class="basket">
+              <img src="dist/icons/basket-ico.png" alt="" class="basket-icon" />
+              <span class="card-count"> 0 </span>
+              <a href="#" class="basket-decr">Корзина</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <header class="mobile-version">
+      <div class="container">
+        <div class="mobile-version-row">
+          <div class="header-mobile-img">
+            <a href="#">
+              <img
+                src="dist/icons/logo_ph.png"
+                alt=""
+                class="header-mobile-logo"
+            /></a>
+          </div>
+          <div class="header-icons">
+            <div class="header-icons-first">
+              <a href="tel:+77719410941" class="header-phone">
+                <img
+                  style="margin-right: 5px"
+                  src="dist/icons/phone-ico-mobole.png"
+                  alt="1"
+                />
+              </a>
+            </div>
+            <div class="header-icons-second">
+              <a href="#" class="header-icon-basket">
+                <img
+                  style="margin-right: 15px"
+                  src="dist/icons/basket-ico.png"
+                  alt="1"
+                />
+                <span class="count"> 0 </span>
+              </a>
+            </div>
+            <div class="badge-mobile">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-search">
+        <div class="container">
+          <button class="mobile-searchButton">
+            <img
+              src="dist/icons/search-ico.png"
+              alt="3"
+              class="mobile-search-icon"
+            />
+          </button>
+          <input
+            type="text"
+            class="mobile-searchTerm"
+            placeholder="Поиск по лекарственным средствам"
+          />
+        </div>
+      </div>
+    </header>
+
+    <section class="banner-block">
+      <div class="container">
+        <div class="slider">
+          <div>
+            <a href="#" class="slider-inner">
+              <img
+                src="dist/img/top-bannerargento.png"
+                class="slider-image"
+                alt=""
+            /></a>
+          </div>
+          <div>
+            <a href="#" class="slider-inner"
+              ><img
+                src="dist/img/top-bannerblackmores.png"
+                class="slider-image"
+                alt=""
+            /></a>
+          </div>
+          <div>
+            <a href="#" class="slider-inner">
+              <img
+                src="dist/img/top-bannerdelivery.png"
+                class="slider-image"
+                alt=""
+            /></a>
+          </div>
+          <div>
+            <a href="#" class="slider-inner">
+              <img
+                src="dist/img/top-bannerdulkolaks.png"
+                class="slider-image"
+                alt=""
+            /></a>
+          </div>
+          <div>
+            <a href="#" class="slider-inner">
+              <img
+                src="dist/img/top-bannersupradin.png"
+                class="slider-image"
+                alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="cotolog">
+          <div>
+            <a href="#" class="cotolog-inner">
+              <img src="dist/img/cotolog_1.png" alt="1" class="cotolog-image" />
+            </a>
+          </div>
+          <div>
+            <a href="#" class="cotolog-inner">
+              <img src="dist/img/cotolog_2.png" alt="" class="cotolog-image" />
+            </a>
+          </div>
+          <div>
+            <a href="#" class="cotolog-inner"
+              ><img src="dist/img/cotolog_3.png" alt="" class="cotolog-image"
+            /></a>
+          </div>
+          <div>
+            <a href="#" class="cotolog-inner"
+              ><img src="dist/img/cotolog_4.png" alt="" class="cotolog-image"
+            /></a>
+          </div>
+          <div>
+            <a href="#" class="cotolog-inner"
+              ><img
+                src="dist/img/1638524087_5.png"
+                alt=""
+                class="cotolog-image"
+            /></a>
+          </div>
+          <div>
+            <a href="#" class="cotolog-inner"
+              ><img src="dist/img/cotolog_6.png" alt="" class="cotolog-image"
+            /></a>
+          </div>
+          <div>
+            <a href="#" class="cotolog-inner"
+              ><img src="dist/img/cotolog_7.png" alt="" class="cotolog-image"
+            /></a>
+          </div>
+        </div>
+        <div class="main-caption">
+          <div class="main-divider"></div>
+          <h2>Каталог</h2>
+        </div>
+        <div class="common-how">
+          <div class="common-header"></div>
+          <div class="cotolog-tab">
+            <div class="tab">
+              <button
+                class="tablinks active"
+                onclick="openCity(event, 'London')"
+              >
+                Популярные
+              </button>
+              <button class="tablinks" onclick="openCity(event, 'Paris')">
+                Новинки
+              </button>
+              <button class="tablinks" onclick="openCity(event, 'Tokyo')">
+                Акции и скидки
+              </button>
+            </div>
+          </div>
+          <!-- mobile-2 -->
+          <div class="mobile-cotolog-first">
+            <h2 class="mobile-cotolog-decr">ПОПУЛЯРНЫЕ</h2>
+          </div>
+          <!-- mobile-2-end -->
+
+          <!-- Tab content -->
+          <div id="London" class="tabcontent" style="display: block">
+            <div class="popular">
+              <div class="row">
+                <div
+                  class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 medicine-product"
+                >
+                  <div class="medicine-item">
+                    <div class="drug">
+                      <a href="#" class="img-drug">
+                        <img src="dist/img/img-drug.png" alt="1" />
+                      </a>
+                    </div>
+
+                    <div class="favourites">
+                      <a href="#">
+                        <img
+                          src="dist/img/favourites1.jpg"
+                          alt=""
+                          class="favourites-img"
+                        />
+                      </a>
+                    </div>
+                    <a href="#">
+                      <div class="medicine-decr">
+                        <p>
+                          Терафлю от гриппа и простуды пор/пак №10
+                          <span>Производитель: Франция</span>
+                        </p>
+                        <p class="whitespace"></p>
+                      </div>
+                    </a>
+
+                    <div class="price">
+                      <p>1 820 ₸</p>
+                    </div>
+                    <div class="purchase">
+                      <button class="btn-purchase">
+                        <img
+                          src="dist/img/btn-purchase-1.png"
+                          alt="1"
+                          class="btn-purchase-img"
+                        />
+                        Купить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 medicine-product"
+                >
+                  <div class="medicine-item">
+                    <div class="drug">
+                      <a href="#" class="img-drug">
+                        <img src="dist/img/img-drug.png" alt="1" />
+                      </a>
+                    </div>
+
+                    <div class="favourites">
+                      <a href="#">
+                        <img
+                          src="dist/img/favourites2.jpg"
+                          alt=""
+                          class="favourites-img"
+                        />
+                      </a>
+                    </div>
+                    <a href="#">
+                      <div class="medicine-decr">
+                        <p>
+                          Бепантен плюс крем 5% 30г
+                          <span>Производитель: Щвейцария</span>
+                        </p>
+                        <p class="whitespace"></p>
+                      </div>
+                    </a>
+
+                    <div class="price">
+                      <p>2 430 ₸</p>
+                    </div>
+                    <div class="purchase">
+                      <button class="btn-purchase">
+                        <img
+                          src="dist/img/btn-purchase-1.png"
+                          alt="1"
+                          class="btn-purchase-img"
+                        />
+                        Купить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 medicine-product"
+                >
+                  <div class="medicine-item">
+                    <div class="drug">
+                      <a href="#" class="img-drug">
+                        <img src="dist/img/img-drug.png" alt="1" />
+                      </a>
+                    </div>
+
+                    <div class="favourites">
+                      <a href="#">
+                        <img
+                          src="dist/img/favourites3.jpg"
+                          alt=""
+                          class="favourites-img"
+                        />
+                      </a>
+                    </div>
+                    <a href="#">
+                      <div class="medicine-decr">
+                        <p>
+                          Анаферон таб для детей №20
+                          <span>Производитель: Россия</span>
+                        </p>
+                        <p class="whitespace"></p>
+                      </div>
+                    </a>
+
+                    <div class="price">
+                      <p>1 620 ₸</p>
+                    </div>
+                    <div class="purchase">
+                      <button class="btn-purchase">
+                        <img
+                          src="dist/img/btn-purchase-1.png"
+                          alt="1"
+                          class="btn-purchase-img"
+                        />
+                        Купить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 medicine-product"
+                >
+                  <div class="medicine-item">
+                    <div class="drug">
+                      <a href="#" class="img-drug">
+                        <img src="dist/img/img-drug.png" alt="1" />
+                      </a>
+                    </div>
+
+                    <div class="favourites">
+                      <a href="#">
+                        <img
+                          src="dist/img/favourites4.jpg"
+                          alt=""
+                          class="favourites-img"
+                        />
+                      </a>
+                    </div>
+                    <a href="#">
+                      <div class="medicine-decr">
+                        <p>
+                          Тайлолфен Хот пор №12
+                          <span>Производитель:Казахстан </span>
+                        </p>
+                        <p class="whitespace"></p>
+                      </div>
+                    </a>
+
+                    <div class="price">
+                      <p>1 640 ₸</p>
+                    </div>
+                    <div class="purchase">
+                      <button class="btn-purchase">
+                        <img
+                          src="dist/img/btn-purchase-1.png"
+                          alt="1"
+                          class="btn-purchase-img"
+                        />
+                        Купить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 medicine-product"
+                >
+                  <div class="medicine-item">
+                    <div class="drug">
+                      <a href="#" class="img-drug">
+                        <img src="dist/img/img-drug.png" alt="1" />
+                      </a>
+                    </div>
+
+                    <div class="favourites">
+                      <a href="#">
+                        <img
+                          src="dist/img/favourites5.jpg"
+                          alt=""
+                          class="favourites-img"
+                        />
+                      </a>
+                    </div>
+                    <a href="#">
+                      <div class="medicine-decr">
+                        <p>
+                          Девит 50000 таб №8
+                          <span>Производитель: Турция</span>
+                        </p>
+                        <p class="whitespace"></p>
+                      </div>
+                    </a>
+
+                    <div class="price">
+                      <p>7 380 ₸</p>
+                    </div>
+                    <div class="purchase">
+                      <button class="btn-purchase">
+                        <img
+                          src="dist/img/btn-purchase-1.png"
+                          alt="1"
+                          class="btn-purchase-img"
+                        />
+                        Купить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 medicine-product"
+                >
+                  <div class="medicine-item">
+                    <div class="drug">
+                      <a href="#" class="img-drug">
+                        <img src="dist/img/img-drug.png" alt="1" />
+                      </a>
+                    </div>
+
+                    <div class="favourites">
+                      <a href="#">
+                        <img
+                          src="dist/img/favourites6.jpg"
+                          alt=""
+                          class="favourites-img"
+                        />
+                      </a>
+                    </div>
+                    <a href="#">
+                      <div class="medicine-decr">
+                        <p>
+                          Отривин спрей назальный ментол эвкалипт 0,1% 10мл
+                          <span>Производитель: Франция</span>
+                        </p>
+                        <p class="whitespace"></p>
+                      </div>
+                    </a>
+
+                    <div class="price">
+                      <p>900 ₸</p>
+                    </div>
+                    <div class="purchase">
+                      <button class="btn-purchase">
+                        <img
+                          src="dist/img/btn-purchase-1.png"
+                          alt="1"
+                          class="btn-purchase-img"
+                        />
+                        Купить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 medicine-product"
+                >
+                  <div class="medicine-item">
+                    <div class="drug">
+                      <a href="#" class="img-drug">
+                        <img src="dist/img/img-drug.png" alt="1" />
+                      </a>
+                    </div>
+
+                    <div class="favourites">
+                      <a href="#">
+                        <img
+                          src="dist/img/favourites7.jpg"
+                          alt=""
+                          class="favourites-img"
+                        />
+                      </a>
+                    </div>
+                    <a href="#">
+                      <div class="medicine-decr">
+                        <p>
+                          Кетонал ДУО капс 150мг №20
+                          <span>Производитель: Австрия</span>
+                        </p>
+                        <p class="whitespace"></p>
+                      </div>
+                    </a>
+
+                    <div class="price">
+                      <p>2 550 ₸</p>
+                    </div>
+                    <div class="purchase">
+                      <button class="btn-purchase">
+                        <img
+                          src="dist/img/btn-purchase-1.png"
+                          alt="1"
+                          class="btn-purchase-img"
+                        />
+                        Купить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 medicine-product"
+                >
+                  <div class="medicine-item">
+                    <div class="drug">
+                      <a href="#" class="img-drug">
+                        <img src="dist/img/img-drug.png" alt="1" />
+                      </a>
+                    </div>
+
+                    <div class="favourites">
+                      <a href="#">
+                        <img
+                          src="dist/img/favourites8.jpg"
+                          alt=""
+                          class="favourites-img"
+                        />
+                      </a>
+                    </div>
+                    <a href="#">
+                      <div class="medicine-decr">
+                        <p>
+                          Релиф супп. рект. 2г №12
+                          <span>Производитель: Щвейцария</span>
+                        </p>
+                        <p class="whitespace"></p>
+                      </div>
+                    </a>
+
+                    <div class="price">
+                      <p>3 230 ₸</p>
+                    </div>
+                    <div class="purchase">
+                      <button class="btn-purchase">
+                        <img
+                          src="dist/img/btn-purchase-1.png"
+                          alt="1"
+                          class="btn-purchase-img"
+                        />
+                        Купить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mobile-content">
+            <h2 class="mobile-cotolog-decr">Новинки</h2>
+            <div class="mobile-medicine-item">
+              <div class="mobile-favourites">
+                <a href="#">
+                  <img
+                    src="dist/img/favourites9.jpg"
+                    alt=""
+                    class="mobile-favourites-img"
+                  />
+                </a>
+              </div>
+              <div>
+                <a href="#">
+                  <div class="mobile-medicine-decr">
+                    <p>
+                      Ляньхуа Цинвэнь капс №24 <br />
+                      <span>Производитель: КНР </span>
+                    </p>
+                  </div>
+                </a>
+                <div class="pr-pur">
+                  <div class="mobile-price">
+                    <p>2 710 ₸</p>
+                  </div>
+                  <div class="purchase">
+                    <button class="btn-purchase">
+                      <img
+                        src="dist/img/btn-purchase-1.png"
+                        alt="1"
+                        class="btn-purchase-img"
+                      />
+                      Купить
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="mobile-cotolog-decr">Акции и скидки</h2>
+          </div>
+
+          <div id="Paris" class="tabcontent">
+            <div
+              class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 medicine-product"
+            >
+              <div class="medicine-item">
+                <div class="drug">
+                  <a href="#" class="img-drug">
+                    <img src="dist/img/img-drug.png" alt="1" />
+                  </a>
+                </div>
+
+                <div class="favourites">
+                  <a href="#">
+                    <img
+                      src="dist/img/favourites9.jpg"
+                      alt=""
+                      class="favourites-img"
+                    />
+                  </a>
+                </div>
+                <a href="#">
+                  <div class="medicine-decr">
+                    <p>
+                      Ляньхуа Цинвэнь капс №24
+                      <span>Производитель: КНР </span>
+                    </p>
+                    <p></p>
+                  </div>
+                </a>
+
+                <div class="price">
+                  <p>2 710 ₸</p>
+                </div>
+                <div class="purchase">
+                  <button class="btn-purchase">
+                    <img
+                      src="dist/img/btn-purchase-1.png"
+                      alt="1"
+                      class="btn-purchase-img"
+                    />
+                    Купить
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="Tokyo" class="tabcontent">
+            <div style="padding: 50px 0" class="platform-all"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="e-mail">
+      <div class="container">
+        <div class="e-mail-decr">
+          Подпишитесь на рассылку и получайте скидки!
+        </div>
+        <input class="email-input" type="email" placeholder="Ваш E-mail" />
+        <div class="send">
+          <button class="email-btn">Отправить</button>
+        </div>
+      </div>
+    </div>
+    <div class="map">
+      <div class="container">
+        <div class="map-decr">
+          <div class="main-divider"></div>
+          <h2>НАШИ АПТЕКИ</h2>
+        </div>
+        <div style="position: relative; overflow: hidden">
+          <a
+            href="https://yandex.kz/maps/org/96016914945/?utm_medium=mapframe&utm_source=maps"
+            style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+            >Burger King</a
+          ><a
+            href="https://yandex.kz/maps/162/almaty/category/fast_food/184106386/?utm_medium=mapframe&utm_source=maps"
+            style="color: #eee; font-size: 12px; position: absolute; top: 14px"
+            >Быстрое питание в Алматы</a
+          ><iframe
+            src="https://yandex.kz/map-widget/v1/-/CCUBIWVYXC"
+            width="100%"
+            height="500px"
+            frameborder="1"
+            allowfullscreen="true"
+            style="position: relative"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="company">
+      <div class="container">
+        <div class="company-header">
+          <div class="main-divider"></div>
+          <h2>О КОМПАНИИ</h2>
+        </div>
+        <div class="company-content">
+          <div class="col-xl-6 company-content-decr">
+            <p>Бренд Pharmacom основан в 1996 году.</p>
+            <p>
+              Сегодня это 2 клиники вакцинации в Алматы и классическая аптека в
+              современном формате, представленная сетью из 38 точек продаж в
+              Алматы, Нур-Султане, Шымкенте, Кызылорде и Петропавловске.
+            </p>
+            <p>&nbsp;</p>
+            <p>Почему выбирают нас?</p>
+            <p>- Отпуск по страховым рецептам</p>
+            <p>- Все формы оплаты + KASPI ...</p>
+            <div class="company-btn">
+              <a class="company-btn-decr" href="#">Подробнее</a>
+            </div>
+          </div>
+
+          <div class="col-xl-6 company-content-image">
+            <img src="dist/img/company-image.jpg" alt="" class="company-img" />
+          </div>
+        </div>
+        <div class="show-more">
+          <div class="show-more-img">
+            <button class="btn-show">
+              <img src="dist/icons/show-more.png" alt="" />
+            </button>
+          </div>
+          <div>
+            <div class="show-more-decr">
+              <p>Бренд Pharmacom основан в 1996 году.</p>
+              <p>
+                Сегодня это 2 клиники вакцинации в Алматы и классическая аптека
+                в современном формате, представленная сетью из 38 точек продаж в
+                Алматы, Нур-Султане, Шымкенте, Кызылорде и Петропавловске.
+              </p>
+              <p>&nbsp;</p>
+              <p>Почему выбирают нас?</p>
+              <p>- Отпуск по страховым рецептам</p>
+              <p>- Все формы оплаты + KASPI ...</p>
+            </div>
+            <div class="accordion-block-mobile">
+              <button class="accordion">Контакты</button>
+              <div class="panel">
+                <div class="information-row">
+                  <h6>
+                    <span
+                      ><img src="dist/icons/fot-point-map.png" alt="1"
+                    /></span>
+                    Головной офис:
+                  </h6>
+                  <p>
+                    050004, Республика Казахстан, <br />
+                    г. Алматы, ул. Маметова 54
+                  </p>
+
+                  <h6>
+                    <span><img src="dist/icons/fot-phone.png" alt="2" /></span>
+                    Телефон:
+                  </h6>
+                  <p>
+                    <a href="tel:+77719410941"> +7 771 941 0 941</a>
+                  </p>
+
+                  <h6>
+                    <span><img src="dist/icons/fot-email.png" alt="3" /></span>
+                    E-mail
+                  </h6>
+                  <p>info: @pharma.com.kz</p>
+                </div>
+              </div>
+
+              <button class="accordion">Мы в соцсетях</button>
+              <div class="panel">
+                <p></p>
+              </div>
+
+              <button class="accordion">Меню</button>
+              <div class="panel">
+                <div class="footer-list">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <p>Адреса аптек</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <p>Адреса клиник вакцинации</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <p>Доставка</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <p>Оплата</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <p>Отзывы</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <p>FAQ</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <p>О сети аптек</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <p>О клиниках вакцинации</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <p>Блог</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <p>Вакансии</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <p>Instagram</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-img col-xl-2 col-lg-2 col-md-6">
+            <img src="dist/icons/fot-logo.png" alt="logo" class="footer-img" />
+          </div>
+          <div class="footer-list сol-xl-2 col-lg-4 col-md-6">
+            <ul>
+              <li>
+                <a href="#">
+                  <p>Адреса аптек</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>Адреса клиник вакцинации</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>Доставка</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>Оплата</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>Отзывы</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>FAQ</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>О сети аптек</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>О клиниках вакцинации</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>Блог</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>Вакансии</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>Instagram</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="information-row col-xl-3 col-lg-3 col-md-6">
+            <h6>
+              <span><img src="dist/icons/fot-point-map.png" alt="1" /></span>
+              Головной офис:
+            </h6>
+            <p>
+              050004, Республика Казахстан, <br />
+              г. Алматы, ул. Маметова 54
+            </p>
+
+            <h6>
+              <span><img src="dist/icons/fot-phone.png" alt="2" /></span>
+              Телефон:
+            </h6>
+            <p>
+              <a href="tel:+77719410941"> +7 771 941 0 941</a>
+            </p>
+
+            <h6>
+              <span><img src="dist/icons/fot-email.png" alt="3" /></span>
+              E-mail
+            </h6>
+            <p>info: @pharma.com.kz</p>
+          </div>
+          <div class="footer-request col-xl-3 col-lg-3 col-md-6">
+            <p class="footer-reuest-desr">
+              У Вас остались еще вопросы? Оставьте заявку и наши менеджера в
+              скором времени с Вами свяжутся!
+            </p>
+            <div class="footer-btn">
+              <a class="footer-reues-btn" href="tel:+7719410941"
+                >Позвоните мне</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="finish">
+      <div class="container">
+        <p class="finish-too">© ТОО «Фармаком»</p>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".slider").slick({
+          arrows: false,
+          autoplay: 1000,
+        });
+      });
+    </script>
+    <script>
+      function openCity(evt, cityName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+    <script>
+      var acc = document.getElementsByClassName("accordion-show");
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+    <script>
+      document
+        .getElementById("btn-show")
+        .addEventListener("show-more-decr", function () {
+          document.getElementById("show-more-decr").classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>

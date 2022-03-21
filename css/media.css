@@ -1,0 +1,140 @@
+@media screen and (max-width: 1200px) {
+  .loc-absol {
+    padding: 0;
+  }
+  .header-all {
+    align-items: center;
+  }
+  .loc-absol .location {
+    height: auto;
+    left: -25px;
+    align-items: center;
+  }
+  .logo-img {
+    width: 250px;
+  }
+  .call {
+    left: -15px;
+  }
+  .login {
+    left: -10px;
+    top: 7px;
+  }
+  .d-flex.login-register {
+    text-align: center;
+    align-items: center;
+  }
+  .f-size-7 {
+    margin: 0;
+    align-items: center;
+  }
+  .cotolog-image {
+    width: 120px;
+    height: auto;
+  }
+  .medicine-item {
+    width: 100%;
+    padding: 15px 10px 15px;
+  }
+  .btn-purchase {
+    width: 120px;
+    height: 45px;
+  }
+  .company .company-content {
+    padding: 0;
+  }
+  .footer-img {
+    width: 165px;
+    height: 175.55px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .logo-img {
+    width: 200px;
+  }
+  .slider-image {
+    width: 100%;
+    height: 300px;
+  }
+  .cotolog-image {
+    width: 90px;
+    height: auto;
+  }
+  .tab {
+    width: 600px;
+  }
+  .footer-img {
+    width: 190px;
+    height: 200px;
+  }
+  .footer-list ul {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .accordion-block-mobile {
+    display: block;
+  }
+  .mobile-content {
+    display: block;
+  }
+  .mobile-cotolog-first {
+    display: block;
+  }
+  .mobile-version {
+    display: block;
+  }
+  body {
+    padding-top: 135px;
+  }
+  .desktop-version,
+  .company-content-decr {
+    display: none;
+  }
+  .slider-image {
+    width: 100%;
+    height: 130px;
+  }
+  .cotolog {
+    display: none;
+  }
+  .main-caption {
+    display: none;
+  }
+  .cotolog-tab {
+    display: none;
+  }
+  .medicine-decr .whitespace {
+    height: 0;
+  }
+  .medicine-product {
+    padding: 0;
+  }
+  .medicine-item {
+    max-width: 100%;
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid #f6f6f6;
+    border-right: 1px solid #f6f6f6;
+  }
+  .e-mail {
+    display: none;
+  }
+  .main-divider {
+    display: none;
+  }
+  .map {
+    padding: 0px;
+  }
+  .company {
+    padding: 0;
+  }
+  .footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+}
